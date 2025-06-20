@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Feedback - Le Jardin Café</title>
+     <link rel="icon" type="image/x-icon" href="img/ac0a4e63-bfa7-4eaf-99c4-0ef2051cb419.jpg">
+    <style>
+        body {
+            background-color: #A68A64;
+
+        }
+
+        #img {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 300px;
+            height: auto;
+            margin: -30px;
+
+
+        }
+
+        #headbar {
+            position: sticky;
+
+        }
+
+
+
+        #headbar ul {
+
+
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+
+        }
+
+        #headbar li {
+
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #A68A64;
+        }
+
+        #headbar li:hover {
+            background-color: #debea2;
+        }
+
+        #headbar a {
+            text-decoration: none;
+            color: rgb(46, 28, 5);
+        }
+
+
+
+        #feed :hover #dropDownMenu {
+            display: flex;
+
+        }
+
+        #dropDownMenu #a {
+            text-decoration: none;
+            color: rgb(46, 28, 5);
+
+        }
+
+        #dropDownMenu #a :hover {
+            background-color: #debea2;
+
+        }
+
+        #dropDownMenu #feed {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #A68A64;
+        }
+
+        .feed {
+            position: relative;
+            display: inline-block;
+        }
+
+
+
+        #dropDownMenu {
+            display: none;
+            position: absolute;
+            background-color: #f5f5dc;
+            min-width: 160px;
+            border-radius: 5px;
+        }
+
+
+        .feedback-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fffaf4;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #8B0000;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .feedback-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            /* Square, not round */
+            border-radius: 0;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .comment {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+
+        #feedback-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+        margin: 0px;
+        border: 0px;
+        background-color: #debea2;
+        color: #3e2723;
+        text-align: center;
+        padding: 20px;
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav id="headbar">
+            <ul>
+                <li> <a href="home.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="breakfast.html">BREAKFAST</a></li>
+                <li> <a href="our products.html">OUR PRODUCTS</a></li>
+                <li> <a href="location.html">LOCATION</a></li>
+                <li> <a href="About us.html">ABOUT US</a></li>
+                <div id="feed">
+                    <li>
+                        <a href="feedback.html">FEEDBACK</a>
+                        <nav id="dropDownMenu">
+                            <ul>
+                                <li><a href="feedbackpic.html">pictures</a></li>
+                                <li><a href="feedbackre.html">reviews</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+            </ul>
+            </div>
+        </nav>
+        <HR color="black">
+        </HR>
+    </header>
+
+    <img src="img/WhatsApp Image 2025-06-15 at 6.34.21 PM.png" alt="" id="img">
+    <div class="menu-container">
+
+        <div class="feedback-container">
+            <h2>What Our Customers Say</h2>
+            <div class="feedback-cards">
+                <div class="card">
+                    <img src="img/cozy place.jpg" alt="Customer 1">
+                    <div class="card-content">
+                        <div class="name">Sarah A.</div>
+                        <div class="comment">"Cozy place, amazing drinks and calm vibe!"</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/coffe shop.jpg" Customer 2>
+                    <div class="card-content">
+                        <div class="name">Omar K.</div>
+                        <div class="comment">"One of the best cafés in town!"</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/shisha and mojito.jpg" alt="Customer 3">
+                    <div class="card-content">
+                        <div class="name">Leen M.</div>
+                        <div class="comment">"The shisha and mojitos were perfect."</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/barista.jpg" alt="Customer 4">
+                    <div class="card-content">
+                        <div class="name">Ahmad W.</div>
+                        <div class="comment">"Friendly staff and elegant atmosphere."</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<footer id="contact">
+        <p>Email: hello@lejardincafe.com | Phone: (123) 456-7890</p>
+        <p>&copy; 1999 Le jardin Café</p>
+    </footer>
+</body>
+
+</html>

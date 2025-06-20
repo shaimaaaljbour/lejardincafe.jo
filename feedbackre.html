@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Feedback</title>
+  <link rel="icon" type="image/x-icon" href="img/2f91c45f-d4ad-4e23-9ae7-a2307b819a18 (1).jpg">
+  <style>
+   body {
+        background-color: #A68A64;
+
+    }
+
+    #img {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 300px;
+        height: auto;
+        margin: -30px;
+
+
+    }
+
+    #headbar {
+        position: sticky;
+
+    }
+
+
+
+    #headbar ul {
+
+
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    #headbar li {
+
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: #A68A64;
+    }
+
+    #headbar li:hover {
+        background-color: #debea2;
+    }
+
+    #headbar a {
+        text-decoration: none;
+        color: rgb(46, 28, 5);
+    }
+
+
+
+    #feed :hover #dropDownMenu {
+        display: flex;
+
+    }
+
+    #dropDownMenu #a {
+        text-decoration: none;
+        color: rgb(46, 28, 5);
+
+    }
+
+    #dropDownMenu #a :hover {
+        background-color: #debea2;
+
+    }
+
+    #dropDownMenu #feed {
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: #A68A64;
+    }
+
+    .feed {
+        position: relative;
+        display: inline-block;
+    }
+
+
+
+    #dropDownMenu {
+        display: none;
+        position: absolute;
+        background-color: #f5f5dc;
+        min-width: 160px;
+        border-radius: 5px;
+    }
+
+    #feedback {
+      background-color: #fdf8f3;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      color: #4b2e2e;
+    }
+
+    #feedback h2 {
+      text-align: center;
+      color: #6b4226;
+      margin-bottom: 30px;
+    }
+
+    .review {
+      background-color: #fffaf4;
+      border-left: 6px solid #c8a97e;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .review p {
+      margin: 0;
+    }
+
+    .review .customer-name {
+      font-weight: bold;
+      color: #6b4226;
+      margin-top: 8px;
+    }
+
+    .stars {
+      color: #d4af37;
+      font-size: 18px;
+      margin: 5px 0 10px;
+    }
+
+    footer {
+      background-color: #debea2;
+      color: #3e2723;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    
+  
+
+    .container {
+      max-width: 600px;
+      background-color: #ffffff;
+      margin: 60px auto;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #4b2e2e;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #6b4226;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    button:hover {
+      background-color: #5a3520;
+    }
+  
+
+  </style>
+</head>
+<body>
+    <header>
+
+        <nav id="headbar">
+            <ul>
+                <li> <a href="home.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="breakfast.html">BREAKFAST</a></li>
+                <li> <a href="our products.html">OUR PRODUCTS</a></li>
+                <li> <a href="location.html">LOCATION</a></li>
+                <li> <a href="About us.html">ABOUT US</a></li>
+                <div id="feed">
+                    <li>
+                        <a href="feedback.html">FEEDBACK</a>
+                        <nav id="dropDownMenu">
+                            <ul>
+                                <li><a href="feedbackpic.html">pictures</a></li>
+                                <li><a href="feedbackre.html">reviews</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+            </ul>
+            </div>
+        </nav>
+        <HR color="black">
+        </HR>
+    </header>
+
+    <img src="img/oj.png" alt="" id="img"><div class="menu-container">
+    
+      
+
+  <section id="feedback">
+    <h2>What Our Customers Say</h2>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Absolutely love the atmosphere! The coffee is top-notch and the staff is super friendly."</p>
+      <p class="customer-name">— Sarah A.</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★☆</div>
+      <p>"Le Jardin Café is my go-to place for weekend brunch. Highly recommend the croissants!"</p>
+      <p class="customer-name">— Omar K.</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Warm, inviting, and the desserts are to die for! Try the tiramisu – it's heavenly."</p>
+      <p class="customer-name">— Nour R.</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★☆</div>
+      <p>"Very relaxing place with beautiful decor. I always bring friends here!"</p>
+      <p class="customer-name">— Fadi M.</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"The staff remembered my order after just two visits. That’s the kind of service that makes a difference."</p>
+ <p class="customer-name">— Kareem Z.</p>
+    </div>
+
+  </section>
+  <title>Give Us a Review </title>
+      <style>
+        .container {
+          width: 100%;
+          max-width: 600px;
+          background-color: #ffffff;
+          margin: 40px auto;
+          padding: 30px 40px;
+          border-radius: 10px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+          font-family: Arial, sans-serif;
+        }
+    
+        h1 {
+          text-align: center;
+          color: #333;
+          margin-bottom: 30px;
+        }
+    
+        label {
+          display: block;
+          margin-top: 15px;
+          font-weight: bold;
+          color: #4b2e2e;
+        }
+    
+        input[type="text"],
+        select,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 16px;
+        }
+    
+        textarea {
+          resize: vertical;
+        }
+    
+        button {
+          background-color: #6b4226;
+          color: white;
+          border: none;
+          padding: 12px 20px;
+          font-size: 16px;
+          border-radius: 6px;
+          cursor: pointer;
+          width: 100%;
+          margin-top: 25px;
+        }
+    
+        button:hover {
+          background-color: #5a3520;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <div class="container">
+        <h1>Give us a Review!</h1>
+    
+        <form>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" placeholder="enter your name" required>
+    
+          <label for="rating">Rating:</label>
+          <select id="rating" required>
+            <option value="">Select</option>
+            <option>★★★★★ (Excellent)</option>
+            <option>★★★★☆ (Very Good)</option>
+            <option>★★★☆☆ (Good)</option>
+            <option>★★☆☆☆ (Fair)</option>
+            <option>★☆☆☆☆ (Poor)</option>
+          </select>
+    
+          <label for="review">Your Review:</label>
+          <textarea id="review" rows="5" placeholder="Write your review here" required></textarea>
+    
+          <button type="submit">Submit Review</button>
+    </form>
+      </div>
+    
+    </body>
+    </html>
+
+  <footer id="contact">
+    <p>Email: hello@lejardincafe.com | Phone: (123) 456-7890</p>
+    <p>&copy; 1999 Le jardin Café</p>
+ </footer>
+
+</body>
+</html>
